@@ -1,0 +1,255 @@
+/* CS1 Background and text colours
+-------------------------------------------------------------*/
+
+/* Фон форума */
+body {background: url(http://funkyimg.com/i/2f9yu.jpg) repeat; background-attachment: scroll; background-position: top center;}
+
+
+/* Шапка */
+#pun-title table {
+background-image : url(http://funkyimg.com/i/2f9o4.jpg); 
+background-repeat : no-repeat;
+background-position: top center;
+border: none;
+width: 980px;
+height: 450px;
+margin-left: -30px;}
+
+/* Тело форума */
+#pun {
+width: 980px; 
+background-color: transparent; 
+background-image: url(http://funkyimg.com/i/2f9o5.jpg); 
+background-attachment: scroll; 
+background-repeat: repeat; 
+background-position: top center;}
+
+.punbb {
+padding: 0 30px!important;
+width: 900px;}
+
+/* Футер */
+#pun-about p.container {
+background-image : url(http://funkyimg.com/i/2f9p5.png);
+margin: 0px 0px -40px -30px;
+background-position : center top;
+background-repeat : no-repeat;
+width: 980px;
+height: 90px; 
+overflow-x: hidden;
+margin-left: -30px;}
+
+
+/* Таблички */
+#table1 {
+position: absolute;
+font-family: "Tahoma";
+font-size: 12px;
+color: #2a1919;
+height: 300px;
+width: 280px;
+top: 100px;
+margin-left: 10px;
+overflow: auto;}
+
+#table2 {
+position: absolute;
+font-family: "Tahoma";
+font-size: 12px;
+color: #2a1919;
+height: 300px;
+width: 280px;
+top: 100px;
+margin-left: 630px;
+overflow: auto;}
+
+
+/* Прокрутка */
+::-webkit-scrollbar {background: #4d7fb2; width: 8px; height: 5px;}
+::-webkit-scrollbar-thumb {background: #fcf082; width: 8px}
+::-webkit-scrollbar-corner {background: #4d7fb2;}
+
+
+/* Профиль */
+.punbb .post .post-author {
+float: left;
+width: 204px;
+margin-left: 20px;
+text-align: center;
+background: url(http://funkyimg.com/i/2f9q3.jpg) top no-repeat, 
+url(http://funkyimg.com/i/2f9q3.jpg) bottom no-repeat,
+url(http://funkyimg.com/i/2f9q3.jpg) repeat-y;}
+
+
+/* CS1.1 Фон и цвет текста на форуме */
+.punbb .section .container, .punbb .post-body, .punbb .post-links, .punbb td.tc2, .punbb td.tc3, #pun-navlinks .container,
+.punbb .formal fieldset .post-box, #viewprofile li strong, #viewprofile li div, #setmods dd,
+.punbb .info-box, .punbb #pun-main .info-box .legend, .punbb .main .container, .punbb .post .container, .punbb .post h3, .punbb-admin #pun-admain .adcontainer, #pun-stats h2, .punbb .main h2, #pun-title, #pun-title .container, .punbb .modmenu .container, .punbb legend span, #viewprofile h2 span, #profilenav h2 span, .punbb-admin #pun-admain legend span, .punbb .post h3 span, .punbb th, #viewprofile li, #setmods dl, #pun-navlinks .container  {background-color: transpanent;
+color: #020202;
+font-weight: normal;
+font-style: normal;
+margin-left:13px;
+}
+
+#pun-admain .adformal, #pun-admain .adcontainer
+{border: none;
+border-color:transparent ;}
+
+.punbb .main h1, #pun-debug h2, .punbb-admin #pun-admain h2 {
+background-color:transparent ;
+color: #020202;
+text-align:center; 
+font-size: 15px; 
+font-style: normal; font-weight: bold; font-family: "Times New Roman";}
+
+
+/* Цитата и выделить код */
+.punbb .quote-box, .punbb .code-box {
+background-color:transparent;
+color: #020202;
+border-color: #eadc33;
+border-width: 2px;
+border-style: solid; 
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4) inset;}
+
+
+/* Область для ввода текста в форме ответа и админке */
+.punbb textarea, .punbb select, .punbb input {
+background-color:transparent;
+color: #020202;
+border-color: #4f81b6;
+border-width: 2px;
+border-style: solid; 
+box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4) inset;}
+
+/* Тень и закругление */
+.punbb .quote-box, .punbb .code-box, .punbb textarea, .punbb select  { 
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;}
+
+.punbb input { border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;}
+
+/* Фон окна наград и репутации */
+#pun-popup_awards div, #pun-reputation div {
+background-color: #c8c8c8;}
+
+
+/* CS2 Ссылки
+-------------------------------------------------------------*/
+
+/* CS2.1 */
+.punbb a, .punbb a:link, .punbb a:visited,
+.punbb-admin #pun-admain a, .punbb-admin #pun-admain a:link, .punbb-admin #punbb-admain a:visited, .punbb li.isactive a, .punbb li.isactive a:link, .punbb li.isactive a:visited, #pun-navlinks a, #pun-ulinks a {color: #2a1919;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(53, 30, 30, 0.3);}
+
+/* CS2.2 */
+.punbb a:focus, .punbb a:active,  .punbb-admin #pun-admain .nodefault,
+.punbb-admin #punbb-admain a:hover, .punbb-admin #punbb-admain a:focus, .punbb-admin #punbb-admain a:active, #pun-navlinks a:focus, #pun-navlinks a:active, #pun-ulinks a:focus, #pun-ulinks a:active {
+  color: #2a1919; 
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(53, 30, 30, 0.3);}
+
+.punbb a:hover, #pun-navlinks a:hover, #pun-ulinks a:hover {
+  color: #231515;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px rgba(53, 30, 30, 0.6);}
+
+#pun-ulinks a {
+  font-size: 11px;
+  color: #2a1919; 
+  font-family: 'Book Antiqua';
+  text-decoration: bold;
+  text-shadow: 1px 1px 1px rgba(53, 30, 30, 0.3);}
+
+#pun-ulinks a:hover, #pun-navlinks a:focus, #pun-navlinks a:active {
+  text-decoration: none;
+  color: #231515;
+  font-family: 'Book Antiqua';
+  font-size: 11px;
+  text-shadow: 1px 1px 1px rgba(53, 30, 30, 0.6);}
+
+
+/* CS3 Остальное 
+-------------------------------------------------------------*/
+
+/* CS3.1 Иконки*/
+
+div.icon {
+            background: url(http://funkyimg.com/i/Ynhz.png) no-repeat;}
+
+    tr.inew div.icon {
+            background: url(http://funkyimg.com/i/Ynhy.png) no-repeat;}
+
+     tr.isticky div.icon {
+            background: url(http://funkyimg.com/i/Ynhw.png) no-repeat;}
+
+    tr.iclosed div.icon {
+            background: url(http://funkyimg.com/i/Ynhx.png) no-repeat;}
+
+
+/* CS3.2 Всё подряд*/
+#pun-main div.catleft, #pun-main div.catright {display: none}
+#pun-main .post-author ul {text-align: center}
+ul.post-ul-Sp, .post-img-Sp {text-align:center;}
+#pun th, #pun-main h2 {text-align: center}
+#pun-navlinks .container, #pun-ulinks .container {text-align: center;}
+.modlist {font-size: 95.05%;}
+#pun-announcement .container {font-size: 101%; font-family: "Times New Roman";}
+.category h2 span{display: none;}
+#pun-stats h2 span {visibility: hidden;}
+#pun td .modlist{display:none;}
+.lastedit {display:none}
+#pun-announcement h2 {display: none}
+#pun-navlinks #navawards{display:none}
+
+.pa-avatar>div{
+  position:relative;
+  z-index:20;
+  display:inline-block;
+  margin: auto;
+  padding:0;
+}
+.pa-avatar>div img{
+  position:absolute;
+  top:0;left:0;
+  z-index:-2;
+}
+
+
+
+.pa-avatar>div>span{
+margin:0;
+padding:3px 12px;
+display:block;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: url(http://i.imgur.com/dITlwFr.png);
+    border-color: rgba(65, 53, 53, 0);
+    border-image: none;
+    border-style: solid none none;
+    border-width: 10px;
+opacity:0;
+transition: opacity 0.6s;
+}
+.pa-avatar:hover>div>span{
+opacity:1.0;
+}
+
+#lz {
+    margin-top: 40px;
+}
+
+.pa-author {
+    padding-bottom: 5px;
+}
+ #pun-admain {
+    margin-left:13px;
+}
