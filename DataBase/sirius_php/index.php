@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<title>Document</title>
+	<title>Sirius</title>
 	<?php require_once('connection.php'); ?>
 </head>
 <body>
@@ -13,7 +13,7 @@
 			?>
 			<?php
 			while ($row = $result->fetch_assoc()) { ?>
-				<div><b><?=$row['name']?></b></div><hr>
+				<div><h1><?=$row['name']?></h1></div><hr>
 				<?php $id_region = $row['id'];
 			}
 		}?>
@@ -26,15 +26,15 @@
 			while ($row = $result->fetch_assoc()) { ?>
 				<div><div><?=$row['name']?></div>
 				<div><p><?=$row['description']?></p></div>
+				<div><h2>Мероприятия: </h2></div>
 				<?php $category = $row['id_category'];
-				$queryevent = "SELECT * FROM event where id_category = '$category'"; 
+				$queryevent = "SELECT * FROM event WHERE id_category = '$category'"; 
 				if ($resultevent = $mysqli->query($queryevent)) {
 			?>
 			<?php
 			while ($rowevent = $resultevent->fetch_assoc()) { ?>
-				<div>
-				<div><p><b>Мероприятие: </b></p></div>
-				<div><p><?=$rowevent['name']?></p></div>
+				<div  style="border: 1px solid black;">
+				<div><h3><u><?=$rowevent['name']?></u></h3></div>
 				<div><p><b>Форма: </b><?=$rowevent['form']?></p></div>
 				<div><p><b>Тип: </b><?=$rowevent['type']?></p></div>
 				<div><p><b>Начало мероприятия: </b><?=$rowevent['start_period']?></p></div>
@@ -43,7 +43,7 @@
 				<div><p><b>Фактическое число участников: </b><?=$rowevent['fact_members']?></p></div>
 				<div><p><b>Проживание: </b><?=$rowevent['housing']?></p></div>
 				<div><p><b>Питание: </b><?=$rowevent['food']?></p></div>
-				
+				<a href="calculator.php?event=<?php echo $rowevent['id']?>&days=<?php echo $rowevent['num_days']?>">Рассчитать</a>
 				</div>
 			<?php }
 				}?>
